@@ -122,6 +122,14 @@
 
   {{ additional_blocks }}
 </div>
+<script>
+  document.querySelectorAll('slideshow-component[infinite]').forEach(el => {
+    el.removeAttribute('infinite');
+  });
+  document.querySelectorAll('.product-information__media media-gallery').forEach(el => {
+  el.classList.add('media-gallery--hint');
+  });
+</script>
 
 {% stylesheet %}
   .product-information {
@@ -325,4 +333,192 @@
   body:has(#header-group #header-component[data-sticky-state='active']) .product-details.sticky-content--desktop {
     --sticky-header-offset: var(--header-height);
   }
+/* Prices */
+    .price{
+      font-size: 32px;
+      font-weight: 700;
+      color: #4E724B
+    }
+
+    .compare-at-price {
+    color: #8E8983;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration-color: #8E8983;
+    }
+
+    @media screen and (max-width: 1000px) {
+    .price{
+      font-size: 24px;
+    }
+    .compare-at-price{
+      font-size: 16px;
+    }
+    }
+
+    .price__sale .price-item__group{
+       display: inline-flex;
+       align-items: center;
+    }
+
+    .add-to-cart-text {
+      flex-direction: row-reverse;
+      font-size: 18px;
+      font-weight: 700;
+      gap: 10px;
+    }
+
+  /* Desktop: Move arrows below the main image */
+ @media screen and (min-width: 750px) {
+
+    .product-information__media slideshow-container {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .product-information__media slideshow-arrows {
+      position: static;
+      display: flex;
+      justify-content: center !important;
+      gap: 12px;
+      padding-top: 12px;
+    }
+
+    /* Grey out prev/next when disabled */
+    .product-information__media slideshow-arrows button[disabled],
+    .product-information__media slideshow-arrows button[aria-disabled='true'] {
+      opacity: 0.3;
+      pointer-events: none;
+    }
+  }
+
+    /* Change Slideshow Elements Border Radius */
+ .product-information__media img.product-media__image {
+    border-radius: 7.14px;
+  }
+ /* Set tax info and price into same row */
+  .price-tax-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  }
+
+  /* 2 Rows on mobile */
+  @media screen and (max-width: 550px) {
+    .price-tax-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+ .price__sale{
+    display: flex;
+    gap: 8px;
+  }
+
+.stock-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #4E724B;
+}
+/* Display in stock message */
+.stock-info__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4E724B;
+  flex-shrink: 0;
+}
+ .stock-info__text{
+  line-height: 1;
+ }
+
+.product-form-buttons{
+  gap: 16px !important;
+}
+
+/* make cart button slightly bigger on Desktop */
+@media screen and (min-width: 750px) {
+  .buy-buttons-block .add-to-cart-button {
+    padding-block: 30px;
+  }
+}
+/* PDP Text Block Styles and Margins fix*/
+.group-block-content .pdp-title{
+  margin-bottom: 4px;
+  font-size: 40px;
+}
+.group-block-content .pdp-description{
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+.group-block-content .pdp-price{
+   margin-bottom: 24px;
+}
+
+@media screen and (max-width: 900px) {
+.group-block-content .pdp-title{
+  font-size: 36px;
+  }
+}
+@media screen and (max-width: 550px) {
+.group-block-content .pdp-title{
+  font-size: 32px;
+}
+
+.group-block-content .pdp-description{
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+.group-block-content .pdp-price{
+  margin-bottom: 24px;
+}
+}
+
+/* section padding */
+.product-information__grid{
+  padding: 40px 80px;
+}
+@media screen and (max-width: 1000px) {
+ .product-information__grid{
+  padding: 24px 16px;
+  }
+}
+@media screen and (max-width: 749px){
+  .product-information__grid{
+  padding: 24px 0px;
+  }
+}
+
+/* Slideshow Peek*/
+@media screen and (max-width: 749px) {
+  .product-information__media slideshow-slides {
+    overflow-x: scroll;
+    --slideshow-gap: 4px;
+    padding-inline-start: 16px;
+    scroll-padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    scroll-padding-inline-end: 16px;
+  }
+
+  .product-information__media slideshow-slide {
+    width: 92%;
+    scroll-snap-align: start;
+  }
+  }
+}
+
+/* Thumbnail: ausgewählt — dünner Rahmen */
+.product-information__media .slideshow-controls__thumbnail[aria-selected='true'] img {
+  outline: 1px solid #8E8983;
+  outline-offset: -1px;
+}
+
+/* Thumbnail: nicht ausgewählt — ausgegraut */
+.product-information__media .slideshow-controls__thumbnail:not([aria-selected='true']) img {
+  opacity: 0.6;
+}
 {% endstylesheet %}

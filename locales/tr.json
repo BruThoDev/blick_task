@@ -73,8 +73,7 @@
     "show_product_details": "{{ product_name }} için ürün ayrıntılarını göster",
     "search_suggestions_available": "\"{{ query }}\" için kullanılabilir arama önerileri",
     "price_filter_low": "Düşük fiyat",
-    "price_filter_high": "Yüksek fiyat",
-    "view_disclosure_information_for_product": "{{ product_title }} için bildirim bilgilerini görüntüleyin"
+    "price_filter_high": "Yüksek fiyat"
   },
   "actions": {
     "add_to_cart": "Sepete ekle",
@@ -273,8 +272,7 @@
       "other": "{{ count }} ürün sepete eklendi"
     },
     "item_count_cutoff": "{{ count }} adetten fazla ürün",
-    "quick_order_list": "Hızlı sipariş listesi",
-    "product_disclosures": "Ürün bildirimleri"
+    "quick_order_list": "Hızlı sipariş listesi"
   },
   "gift_cards": {
     "issued": {

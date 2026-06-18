@@ -75,8 +75,7 @@
     "featured_product": "Polecany produkt",
     "search_suggestions_available": "Dla „{{ query }}” dostępne są podpowiedzi wyszukiwania",
     "price_filter_low": "Niska cena",
-    "price_filter_high": "Wysoka cena",
-    "view_disclosure_information_for_product": "Wyświetl dodatkowe informacje dla produktu {{ product_title }}"
+    "price_filter_high": "Wysoka cena"
   },
   "actions": {
     "add_to_cart": "Dodaj do koszyka",
@@ -285,8 +284,7 @@
       "many": "Dodano {{ count }} pozycje(-i) do koszyka"
     },
     "item_count_cutoff": "Więcej niż {{ count }} pozycje(-i)",
-    "quick_order_list": "Lista do szybkiego zamawiania",
-    "product_disclosures": "Dodatkowe informacje o produkcie"
+    "quick_order_list": "Lista do szybkiego zamawiania"
   },
   "gift_cards": {
     "issued": {

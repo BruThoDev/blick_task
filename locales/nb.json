@@ -73,8 +73,7 @@
     "featured_product": "Fremhevet produkt",
     "search_suggestions_available": "Søkeforslag tilgjengelige for «{{ query }}»",
     "price_filter_low": "Lav pris",
-    "price_filter_high": "Høy pris",
-    "view_disclosure_information_for_product": "Se produktopplysninger for {{ product_title }}"
+    "price_filter_high": "Høy pris"
   },
   "actions": {
     "add_to_cart": "Legg i handlekurv",
@@ -273,8 +272,7 @@
       "other": "{{ count }} varer er lagt til i handlekurven"
     },
     "item_count_cutoff": "Mer enn {{ count }} varer",
-    "quick_order_list": "Hurtigbestillingsliste",
-    "product_disclosures": "Produktopplysninger"
+    "quick_order_list": "Hurtigbestillingsliste"
   },
   "gift_cards": {
     "issued": {

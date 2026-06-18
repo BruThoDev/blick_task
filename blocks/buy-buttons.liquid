@@ -221,6 +221,12 @@
               </div>
             </volume-pricing>
           {%- endif -%}
+          {% if can_add_to_cart %}
+            <div class="stock-info">
+              <span class="stock-info__dot"></span>
+              <span class="stock-info__text">{{ 'content.inventory_in_stock_custom' | t  }}</span>
+            </div>
+          {% endif %}
           {% content_for 'block',
             type: 'add-to-cart',
             id: 'add-to-cart',

@@ -2416,7 +2416,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 .tax-note.tax-note.tax-note {
   font-size: min(0.85em, var(--font-paragraph--size));
   font-weight: var(--font-paragraph--weight);
-  color: rgb(var(--color-rgb, var(--color-foreground-rgb)) / var(--opacity-subdued-text));
+  color: #8E8983;
 }
 
 .tax-note:empty {
@@ -2443,7 +2443,7 @@ product-price.text-block:is(.h1, .h2, .h3, .h4, .h5, .h6) .volume-pricing-note {
 .compare-at-price {
   color: rgb(var(--color-rgb, var(--color-foreground-rgb)) / var(--opacity-subdued-text));
   text-decoration-line: line-through;
-  text-decoration-thickness: 1.5px;
+  text-decoration-thickness: 1px;
   text-decoration-color: rgb(var(--color-rgb, var(--color-foreground-rgb)) / var(--opacity-30));
 }
 
@@ -2607,10 +2607,6 @@ form.payment-terms {
   display: flex;
   gap: var(--gap);
   height: 100%;
-}
-
-.shopify-block:has(> [shopify-block-empty]) {
-  display: none;
 }
 
 .layout-panel-flex--row {
