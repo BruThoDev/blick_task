@@ -73,8 +73,7 @@
     "featured_product": "Προτεινόμενο προϊόν",
     "search_suggestions_available": "Διαθέσιμες προτάσεις αναζήτησης για «{{ query }}»",
     "price_filter_low": "Χαμηλή τιμή",
-    "price_filter_high": "Υψηλή τιμή",
-    "view_disclosure_information_for_product": "Προβολή πληροφοριών γνωστοποίησης για {{ product_title }}"
+    "price_filter_high": "Υψηλή τιμή"
   },
   "actions": {
     "add_to_cart": "Προσθήκη στο καλάθι",
@@ -273,8 +272,7 @@
       "one": "1 προϊόν προστέθηκε στο καλάθι σας",
       "other": "{{ count }} προϊόντα προστέθηκαν στο καλάθι"
     },
-    "quick_order_list": "Λίστα Quick orders",
-    "product_disclosures": "Γνωστοποιήσεις προϊόντος"
+    "quick_order_list": "Λίστα Quick orders"
   },
   "gift_cards": {
     "issued": {

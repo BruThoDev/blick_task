@@ -75,8 +75,7 @@
     "featured_product": "Rekomenduojamas produktas",
     "search_suggestions_available": "Galimi paieškos pasiūlymai pagal „{{ query }}“",
     "price_filter_low": "Žema kaina",
-    "price_filter_high": "Aukšta kaina",
-    "view_disclosure_information_for_product": "Peržiūrėti atskleidžiamą informaciją apie {{ product_title }}"
+    "price_filter_high": "Aukšta kaina"
   },
   "actions": {
     "add_to_cart": "Įdėti į krepšelį",
@@ -285,8 +284,7 @@
       "many": "{{ count }} prekių pridėta prie krepšelio"
     },
     "item_count_cutoff": "Daugiau kaip {{ count }} prekės (-ių)",
-    "quick_order_list": "Greito užsakymo sąrašas",
-    "product_disclosures": "Atskleidžiama produkto informacija"
+    "quick_order_list": "Greito užsakymo sąrašas"
   },
   "gift_cards": {
     "issued": {
